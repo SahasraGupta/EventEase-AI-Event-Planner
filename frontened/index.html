@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Event Planner</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h2>Event<span>Ease</span></h2>
+        <p>AI-Powered Event Planner</p>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Plan Your Perfect Event</h1>
+            <p>
+                Tell us what you're planning.
+                Let AI take care of the recommendations.
+            </p>
+        </section>
+
+
+        <!-- Event Planner Input -->
+        <section class="planner">
+
+            <h2>Describe Your Event</h2>
+
+            <textarea
+                id="userQuery"
+                placeholder="Example: I want to organize a birthday party in Hyderabad for 100 guests with a budget of ₹50,000..."
+            ></textarea>
+
+            <button
+                id="generateBtn"
+                onclick="generateRecommendations()"
+            >
+                Generate Recommendations
+            </button>
+
+        </section>
+
+
+        <!-- AI Recommendations -->
+        <section class="results" id="recommendations">
+
+            <h2>AI Recommendations</h2>
+
+            <!-- Event Overview -->
+            <div class="result-section" id="eventOverview">
+
+                <h3>Event Overview</h3>
+
+                <div class="result-content">
+                    <p>Your event overview will appear here.</p>
+                </div>
+
+            </div>
+
+
+            <!-- Venue Recommendations -->
+            <div class="result-section" id="venueRecommendations">
+
+                <h3>Venue Recommendations</h3>
+
+                <div class="result-content">
+                    <p>Venue suggestions will appear here.</p>
+                </div>
+
+            </div>
+
+
+            <!-- Food Recommendations -->
+            <div class="result-section" id="foodRecommendations">
+
+                <h3>Food & Catering</h3>
+
+                <div class="result-content">
+                    <p>Food recommendations will appear here.</p>
+                </div>
+
+            </div>
+
+
+            <!-- Decoration Recommendations -->
+            <div class="result-section" id="decorationRecommendations">
+
+                <h3>Decoration</h3>
+
+                <div class="result-content">
+                    <p>Decoration suggestions will appear here.</p>
+                </div>
+
+            </div>
+
+
+            <!-- Additional Recommendations -->
+            <div class="result-section" id="otherRecommendations">
+
+                <h3>Additional Recommendations</h3>
+
+                <div class="result-content">
+                    <p>Additional suggestions will appear here.</p>
+                </div>
+
+            </div>
+
+
+            <!-- Budget Breakdown -->
+            <div class="result-section" id="budgetBreakdown">
+
+                <h3>Estimated Budget Breakdown</h3>
+
+                <div class="result-content">
+                    <p>Estimated costs will appear here.</p>
+                </div>
+
+            </div>
+
+
+            <!-- Information Sources -->
+            <div class="result-section" id="recommendationSources">
+
+                <h3>Information Sources</h3>
+
+                <div class="result-content">
+                    <p>Sources will appear here.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>Powered by AI | AI Event Planner</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
